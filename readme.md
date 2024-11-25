@@ -5,7 +5,7 @@ This project represents the initial implementation of a website development appl
 
 # **Features**
 *Responsive Layout*: The design is adaptable to various screen sizes, ensuring usability across devices.
-Navigation Menu: Includes a user-friendly menu with links to key sections like Produtos, Templates, Recursos, and more.
+*Navigation Menu:* Includes a user-friendly menu with links to key sections like Produtos, Templates, Recursos, and more.
 *Interactive Elements*: Integrates support for dropdowns and animations (can be extended using JavaScript).
 *Clean Design*: Employs a professional and minimalistic aesthetic with an emphasis on functionality.
 
