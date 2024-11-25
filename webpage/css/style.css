@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+    --white: #FFF;
+    --whitesmoke: #F9F9F9;
+    --light-grey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey: #A7A7A7;
+    --deep-grey: #292929;
+    --def-grey: #191919;
+    --black: #000000;
+    --blue: rgb(29, 29, 120);
+    --red: #CF3C3F;
+}
+
+body {
+    background-color: var(--def-grey);
+    margin: 0;
+    padding: 0;
+}
+
+.linha_superior {
+    background-color: var(--black);
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.linha_superior .logojpg {
+    position: absolute;
+    padding: 0;
+    width: 30%;
+    margin-top: -65px;
+    margin-left: -165px;
+}
+
+.linha_superior {
+    background-color: var(--black);
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.linha_superior .logojpg {
+    position: absolute;
+    padding: 0;
+    align-items: center;
+    width: 30%;
+    margin-top: -65px;
+    margin-left: -165px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-top: -60px;  
+    margin-inline: 20px;
+}
+
+.menu .list_guia {
+    list-style: none;
+    display: flex;
+}
+
+.menu .list_guia a {
+    font-family: 'Lexend Deca', sans-serif; /* Aplica a fonte aos links das listas */
+    text-decoration: none;
+    color: var(--white);
+}
+
+.menu .list_guia li {
+    margin-left: 50px;
+}
+
+.menu .list_guia li:first-child {
+    margin-left: 0;
+}
+
+.menu .list_guia .suporte{
+    margin-left: 400px;
+}
+.menu .list_guia .entrar {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.menu .list_guia .seta {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--blue);
+    transition: transform 0.2s;
+}
+
+.menu .list_guia li.open .seta {
+    transform: rotate(-180deg);
+}
+
+.menu .list_guia .entrar{
+    border: 2px solid var(--blue);
+    padding: 15px 35px;
+    border-radius: 20px;
+}
+
+.body_blue {
+    background-color: var(--blue);
+    padding: 20px;
+    height: 600px;
+    color: var(--white); 
+}
+
+
+.body_blue svg{
+    width: 40%;
+    margin-top: 40px;
+    margin-left: 850px;
+}
+
+.body_blue .information{
+    position: relative;
+    margin-top: -480px;
+    margin-left: 180px;
+    font-family: 'Lexend Deca', sans-serif; /* Aplica a fonte aos links das listas */
+}
+
+.body_blue .information .h1turtle{
+    margin-left: -22px;
+    font-size: 55px;
+    padding: 20px;
+}
+
+.body_blue .information .button_go {
+    position: absolute;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background-color: var(--def-grey);
+    color: var(--white);
+    transition: background-color 0.4    s, border-color 0.3s;
+    font-family: 'Lexend Deca', sans-serif; 
+}
+
+.body_blue .information .button_go:hover {
+    background-color: var(--white);
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.body_blue .information .button_go:active {
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--blue);
+}
+
+/* Regras de mídia para telas menores */
+
+@media screen and (max-width: 768px) {
+    .linha_superior .logojpg {
+        width: 40%;
+        margin-left: -20%;
+    }
+
+    .menu .list_guia li {
+        margin-left: 10px;
+    }
+
+    .menu .list_guia .suporte {
+        margin-left: 200px;
+    }
+
+    .body_blue svg {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+
+    .body_blue .information {
+        margin-top: -200px;
+        margin-left: 20px;
+    }
+
+    .body_blue .information .h1turtle {
+        font-size: 40px;
+    }
+
+    .body_blue .information .button_go {
+        margin-top: 20px;
+        padding: 15px 30px;
+    }
+}
+
+/* Regras de mídia para telas ainda menores */
+
+@media screen and (max-width: 480px) {
+    .linha_superior .logojpg {
+        width: 50%;
+        margin-left: -10%;
+    }
+
+    .menu {
+        margin-top: -50px;
+    }
+
+    .menu .list_guia li {
+        margin-left: 5px;
+    }
+
+    .menu .list_guia .suporte {
+        margin-left: 150px;
+    }
+
+    .body_blue {
+        padding: 10px;
+    }
+
+    .body_blue svg {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+
+    .body_blue .information {
+        margin-top: -150px;
+        margin-left: 10px;
+    }
+
+    .body_blue .information .h1turtle {
+        font-size: 30px;
+    }
+
+    .body_blue .information .button_go {
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+}
